@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#">
+                <img src="images/logo_d.gif" class='pc'>
+                <img src="images/logo_m.gif" class='mo'>
+            </a>
+        </h1>
+        
+        <button class="navBtn mo">
+            <img src="images/btn_menu.gif">
+        </button>
+        <button class="myBtn">
+            <img src="images/btn_member.gif" class='pc'>
+            <img src="images/btn_member_m.gif" class='mo'>
+        </button>
+        <button class="srcPcBtn pc">
+            <img src="images/btn_srh.gif">
+        </button>
+        <nav>
+            <button class="closeBtn mo">
+                <img src="images/btn_menu_close.gif">
+            </button>
+            <form class="srchForm mo">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <button class="srcBtn">
+                    <img src="images/btn_srh_m.gif">
+                </button>
+            </form>
+            <ul class="gnb">
+                <li><a href="#">COLLECTION</a></li>
+                <li><a href="#">ORIGIN</a></li>
+                <li><a href="#">4TEAM</a></li>
+                <li><a href="#">LIVE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">STORE</a></li>
+                <li class="red"><a href="#">CAMPAIGN</a></li>
+                <li class="red"><a href="#">POP-UP SOTRE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bn">
+        <a href="#">
+            <img src="images/slider1.jpg" class="tablet">
+            <img src="images/sliderM1.jpg"class="mo">
+        </a>
+    </div>
+    <section>
+        <div class="item">
+            <a href="#">
+                <img src="images/bn1.jpg">
+                <div class="inner">
+                    <p>PARK SU JIN <br>PERFECT FIT STYLE</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/bn2.jpg">
+                <div class="inner">
+                    PERFECT PERFORMANCE<br>FALL TRAINNING STYLE
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/bn3.jpg">
+                <div class="inner">
+                    HERITAGE SHOES<br>LA84 COLLECTION
+                    <img src="images/icon_blog.png" class="icon">
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/bn4.jpg">
+                <div class="inner">
+                    HERITAGES SHOES<br>LA84 US MODEL
+                    <img src="images/icon_facebook.png" class="icon">
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/bn5.jpg">
+                <div class="inner">
+                    HERITAGE SHOES<br>LA84 US ONE
+                    <img src="images/icon_instagram.png" class="icon">
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/bn6.jpg">
+                <div class="inner">
+                    SPECIAL PRICE CHANCE<br>KAPPA HOT DEAL
+                    <img src="images/icon_ad.png" class="icon">
+                </div>
+            </a>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="fWrap">
+            <ul class="fInfo">
+                <li><a href="#">STORE INFO</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="#">RECRUIT</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li class ="red"><a href="#">개인정보 취급방침</a></li>
+                <li><a href="#">CS CENTER</a></li>
+                <li><a href="#">매장개설문의</a></li>
+            </ul>
+        </div>
+        <ul class="sns">
+            <li>
+                <a href="#">
+                    <img src="images/fSnsIcon1.gif"class="pc">
+                    <img src="images/fSnsIcon1_m.gif"class="mo">
+                    <img src="images/fSnsIcon1_on.gif" class="hover">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/fSnsIcon2.gif"class="pc">
+                    <img src="images/fSnsIcon2_m.gif"class="mo">
+                    <img src="images/fSnsIcon2_on.gif" class="hover">
+                </a>
+            </li>
+            <li>    
+                <a href="#">
+                    <img src="images/fSnsIcon3.gif"class="pc">
+                    <img src="images/fSnsIcon3_m.gif"class="mo">
+                    <img src="images/fSnsIcon3_on.gif" class="hover">
+                </a>
+            </li>
+            <li>    
+                <a href="#">
+                    <img src="images/fSnsIcon4.gif"class="pc">
+                    <img src="images/fSnsIcon4_m.gif"class="mo">
+                    <img src="images/fSnsIcon4_on.gif" class="hover">
+                </a>
+            </li>
+            <li>    
+                <a href="#">
+                    <img src="images/fSnsIcon5.gif"class="pc">
+                    <img src="images/fSnsIcon5_m.gif"class="mo">
+                    <img src="images/fSnsIcon5_on.gif" class="hover">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <div class="copyright">
+        <p>COPYRIGHT 2015 KAPPA KOREA. ALL RIGHT RESERVED</p>
+        <img src="images/getseal.gif"class ="mark">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('.navBtn').click(function(){
+            $('nav').css('left','0');
+        });
+        $('.closeBtn').click(function(){
+            $('nav').css('left','-100%');
+        });
+        $(window).resize(function(){
+            
+            let winWidth = $(window).width();
+            if(winWidth >= 1440){
+                location.reload();
+            }
+        });
+    </script>
+</body>
+</html>
